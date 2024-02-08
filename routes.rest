@@ -1,0 +1,16 @@
+### GET TO ROOT PATH
+GET http://localhost:3000/ HTTP/1.1
+
+### CREATE A NEW USER
+
+
+### READ A USER
+
+
+### UPDATE A USER
+
+
+
+### DELETE A USER
+
+
