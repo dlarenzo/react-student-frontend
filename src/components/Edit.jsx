@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
+import "./CreateEdit.scss";
 
 export default function Edit() {
   const [form, setForm] = useState({
@@ -19,7 +20,7 @@ export default function Edit() {
     async function fetchData() {
       const id = params.id.toString();
       const response = await fetch(
-        `http://localhost:3000/students/{params.id.toString()}`
+        `http://localhost:3000/students/${params.id.toString()}`
       );
 
       if (!response.ok) {
@@ -74,7 +75,7 @@ export default function Edit() {
 
   // This following section will display the form that takes input from the user to update the data.
   return (
-    <div>
+    <div className="form-container">
       <h3>Update Record</h3>
       <form onSubmit={onSubmit}>
         <div className="form-group">
@@ -109,7 +110,7 @@ export default function Edit() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="age">Music Genre</label>
+          <label htmlFor="age">Age</label>
           <input
             type="text"
             className="form-control"
