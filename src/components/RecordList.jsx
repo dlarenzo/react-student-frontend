@@ -35,7 +35,9 @@ export default function RecordList() {
   useEffect(() => {
     setLoading(true);
     async function getRecords() {
-      const response = await fetch(`http://localhost:3000/students`);
+      const response = await fetch(
+        `https://nodejs-student-project.onrender.com/students`
+      );
       console.log(response);
       setLoading(false);
       if (!response.ok) {
@@ -53,7 +55,7 @@ export default function RecordList() {
 
   // This method will delete a record
   async function deleteRecord(id) {
-    await fetch(`http://localhost:3000/students/${id}`, {
+    await fetch(`https://nodejs-student-project.onrender.com/students/${id}`, {
       method: "DELETE",
     });
 
