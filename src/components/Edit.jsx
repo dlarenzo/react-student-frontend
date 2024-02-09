@@ -62,13 +62,16 @@ export default function Edit() {
     };
 
     // This will send a post request to update the data in the database.
-    await fetch(`http://localhost:3000/students/${params.id}`, {
-      method: "PUT",
-      body: JSON.stringify(editedPerson),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    await fetch(
+      `https://nodejs-student-project.onrender.com/students/${params.id}`,
+      {
+        method: "PUT",
+        body: JSON.stringify(editedPerson),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     navigate("/");
   }
