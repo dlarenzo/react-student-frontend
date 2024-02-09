@@ -6,13 +6,15 @@ created branch: creating-app.
 
 created branch: part-two.
 
+merge branch: part-two merged with main
+
 #PURPOSE OF PROJECT
 
 This project was create to work through a database of students. To view, create, update and delete list.
 
 The database is ran through render.com and connected as the API information so no need mess with API's or render it's all set.
 
-Just open project, install, run and database is connected. Then just start using!
+Just open project, install, run start and database is connected. Then just start using!
 
 # Getting Started with Create React App
 
